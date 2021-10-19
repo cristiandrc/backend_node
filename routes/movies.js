@@ -10,6 +10,7 @@ function moviesApi(app) {
     const { tags } = req.query;
     try {
       const movies = await moviesServices.getMovies({ tags });
+      // throw new Error('error getting movies');
       res.status(200).json({
         data: movies,
         message: 'movies listed',
