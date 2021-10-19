@@ -67,7 +67,7 @@ function moviesApi(app) {
     const { movieId } = req.params;
 
     try {
-      const deleteMovieId = await moviesServices.deleteMovie(movieId);
+      const deleteMovieId = await moviesServices.deleteMovie({ movieId });
       res.status(200).json({
         data: deleteMovieId,
         message: 'movie deleted',
