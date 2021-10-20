@@ -12,6 +12,8 @@
   "author": "Criatian Rojas <cristian.rojas.d@outlook.com>",
   "license": "MIT",
   "dependencies": {
+    "@hapi/boom": "^9.1.4",
+    "@hapi/joi": "^17.1.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongodb": "^4.1.3"
