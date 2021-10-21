@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "DEBUG=app:* && nodemon index",
     "start": "NODE_ENV=production && node index",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test":"mocha --exit"
   },
   "keywords": [],
   "author": "Criatian Rojas <cristian.rojas.d@outlook.com>",
@@ -24,7 +25,11 @@
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.2.3",
-    "prettier": "^2.4.1"
+    "mocha": "^9.1.3",
+    "prettier": "^2.4.1",
+    "proxyquire": "^2.1.3",
+    "sinon": "^11.1.2",
+    "supertest": "^6.1.6"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
